@@ -1,0 +1,314 @@
+[
+  {
+    "student_id": "STU10294",
+    "first_name": "Иван",
+    "last_name": "Иванов",
+    "age": 20,
+    "contact": {
+      "email": "i.ivanov@university.edu",
+      "phone": "+1-555-0199"
+    },
+    "books": [
+      {
+        "name": "Идиот",
+        "author": "Фёдор Достоевский",
+        "published_date": "1869-01-01",
+        "page_count": 640
+      },
+      {
+        "name": "Преступление и наказание",
+        "author": "Фёдор Достоевский",
+        "published_date": "1866-01-01",
+        "page_count": 608
+      },
+      {
+        "name": "Мастер и Маргарита",
+        "author": "Михаил Булгаков",
+        "published_date": "1967-01-01",
+        "page_count": 448
+      },
+      {
+        "name": "Анна Каренина",
+        "author": "Лев Толстой",
+        "published_date": "1877-01-01",
+        "page_count": 864
+      },
+      {
+        "name": "Мёртвые души",
+        "author": "Николай Гоголь",
+        "published_date": "1842-01-01",
+        "page_count": 352
+      },
+      {
+        "name": "Война и мир",
+        "author": "Лев Толстой",
+        "published_date": "1869-01-01",
+        "page_count": 1300
+      },
+      {
+        "name": "Евгений Онегин",
+        "author": "Александр Пушкин",
+        "published_date": "1833-01-01",
+        "page_count": 224
+      },
+      {
+        "name": "Лавр",
+        "author": "Евгений Водолазкин",
+        "published_date": "2012-10-15",
+        "page_count": 448
+      },
+      {
+        "name": "Кысь",
+        "author": "Татьяна Толстая",
+        "published_date": "2000-01-01",
+        "page_count": 384
+      },
+      {
+        "name": "Задача трёх тел",
+        "author": "Лю Цысинь",
+        "published_date": "2008-01-01",
+        "page_count": 464
+      }
+    ]
+  },
+  {
+    "student_id": "STU10295",
+    "first_name": "Алексей",
+    "last_name": "Смирнов",
+    "age": 21,
+    "contact": {
+      "email": "a.smirnov@university.edu",
+      "phone": "+7-999-111-2233"
+    },
+    "books": [
+      {
+        "name": "Война и мир",
+        "author": "Лев Толстой",
+        "published_date": "1869-01-01",
+        "page_count": 1300
+      },
+      {
+        "name": "Братья Карамазовы",
+        "author": "Фёдор Достоевский",
+        "published_date": "1880-11-01",
+        "page_count": 832
+      },
+      {
+        "name": "Братья Карамазовы",
+        "author": "Фёдор Достоевский",
+        "published_date": "1880-11-01",
+        "page_count": 832
+      },
+      {
+        "name": "Герой нашего времени",
+        "author": "Михаил Лермонтов",
+        "published_date": "1840-01-01",
+        "page_count": 224
+      },
+      {
+        "name": "Отцы и дети",
+        "author": "Иван Тургенев",
+        "published_date": "1862-01-01",
+        "page_count": 288
+      },
+      {
+        "name": "Отцы и дети",
+        "author": "Иван Тургенев",
+        "published_date": "1862-01-01",
+        "page_count": 288
+      },
+      {
+        "name": "Собачье сердце",
+        "author": "Михаил Булгаков",
+        "published_date": "1968-01-01",
+        "page_count": 160
+      },
+      {
+        "name": "Метро 2033",
+        "author": "Дмитрий Глуховский",
+        "published_date": "2005-01-01",
+        "page_count": 480
+      },
+      {
+        "name": "Клара и Солнце",
+        "author": "Кадзуо Исигуро",
+        "published_date": "2021-03-02",
+        "page_count": 352
+      }
+    ]
+  },
+  {
+    "student_id": "STU10296",
+    "first_name": "Мария",
+    "last_name": "Иванова",
+    "age": 19,
+    "contact": {
+      "email": "m.ivanova@university.edu",
+      "phone": "+7-999-222-3344"
+    },
+    "books": [
+      {
+        "name": "Евгений Онегин",
+        "author": "Александр Пушкин",
+        "published_date": "1833-01-01",
+        "page_count": 224
+      },
+      {
+        "name": "Капитанская дочка",
+        "author": "Александр Пушкин",
+        "published_date": "1836-01-01",
+        "page_count": 192
+      },
+      {
+        "name": "Горе от ума",
+        "author": "Александр Грибоедов",
+        "published_date": "1825-01-01",
+        "page_count": 160
+      },
+      {
+        "name": "Обломов",
+        "author": "Иван Гончаров",
+        "published_date": "1859-01-01",
+        "page_count": 640
+      },
+      {
+        "name": "Тихий Дон",
+        "author": "Михаил Шолохов",
+        "published_date": "1928-01-01",
+        "page_count": 1568
+      },
+      {
+        "name": "Зулейха открывает глаза",
+        "author": "Гузель Яхина",
+        "published_date": "2015-05-01",
+        "page_count": 512
+      },
+      {
+        "name": "Transhumanism Inc.",
+        "author": "Виктор Пелевин",
+        "published_date": "2021-08-26",
+        "page_count": 608
+      },
+      {
+        "name": "Семь смертей Эвелины Хардкасл",
+        "author": "Стюарт Тёртон",
+        "published_date": "2018-02-08",
+        "page_count": 512
+      }
+    ]
+  },
+  {
+    "student_id": "STU10297",
+    "first_name": "Дмитрий",
+    "last_name": "Соколов",
+    "age": 22,
+    "contact": {
+      "email": "d.sokolov@university.edu",
+      "phone": "+7-999-333-4455"
+    },
+    "books": [
+      {
+        "name": "Пикник на обочине",
+        "author": "Аркадий и Борис Стругацкие",
+        "published_date": "1972-01-01",
+        "page_count": 256
+      },
+      {
+        "name": "Трудно быть богом",
+        "author": "Аркадий и Борис Стругацкие",
+        "published_date": "1964-01-01",
+        "page_count": 224
+      },
+      {
+        "name": "Мы",
+        "author": "Евгений Замятин",
+        "published_date": "1924-01-01",
+        "page_count": 224
+      },
+      {
+        "name": "Котлован",
+        "author": "Андрей Платонов",
+        "published_date": "1987-01-01",
+        "page_count": 160
+      },
+      {
+        "name": "Один день Ивана Денисовича",
+        "author": "Александр Солженицын",
+        "published_date": "1962-11-01",
+        "page_count": 160
+      },
+      {
+        "name": "iPhuck 10",
+        "author": "Виктор Пелевин",
+        "published_date": "2017-09-26",
+        "page_count": 416
+      },
+      {
+        "name": "Пиранези",
+        "author": "Сюзанна Кларк",
+        "published_date": "2020-09-15",
+        "page_count": 352
+      }
+    ]
+  },
+  {
+    "student_id": "STU10298",
+    "first_name": "Елена",
+    "last_name": "Кузнецова",
+    "age": 20,
+    "contact": {
+      "email": "e.kuznetsova@university.edu",
+      "phone": "+7-999-444-5566"
+    },
+    "books": [
+      {
+        "name": "Вишнёвый сад",
+        "author": "Антон Чехов",
+        "published_date": "1904-01-01",
+        "page_count": 96
+      },
+      {
+        "name": "Палата № 6",
+        "author": "Антон Чехов",
+        "published_date": "1892-01-01",
+        "page_count": 80
+      },
+      {
+        "name": "Белая гвардия",
+        "author": "Михаил Булгаков",
+        "published_date": "1925-01-01",
+        "page_count": 384
+      },
+      {
+        "name": "Доктор Живаго",
+        "author": "Борис Пастернак",
+        "published_date": "1957-11-15",
+        "page_count": 544
+      },
+      {
+        "name": "Ревизор",
+        "author": "Николай Гоголь",
+        "published_date": "1836-01-01",
+        "page_count": 160
+      },
+      {
+        "name": "Петровы в гриппе и вокруг него",
+        "author": "Алексей Сальников",
+        "published_date": "2016-01-01",
+        "page_count": 416
+      },
+      {
+        "name": "Щегол",
+        "author": "Донна Тартт",
+        "published_date": "2013-10-22",
+        "page_count": 832
+      },
+      {
+        "name": "Брисбен",
+        "author": "Евгений Водолазкин",
+        "published_date": "2018-11-20",
+        "page_count": 416
+      }
+    ]
+  }
+]
