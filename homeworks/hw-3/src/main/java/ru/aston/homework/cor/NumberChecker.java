@@ -19,7 +19,7 @@ abstract class NumberChecker<T extends Number & Comparable<T>> {
     }
 
     @SafeVarargs
-    public static NumberChecker<T> link(NumberChecker<T> head, NumberChecker<T>... others) {
+    public static <T extends Number & Comparable<T>> NumberChecker<T> link(NumberChecker<T> head, NumberChecker<T>... others) {
 	NumberChecker<T> first = head;
 	for (NumberChecker<T> checker: others) {
 	    first = first.setNext(checker);

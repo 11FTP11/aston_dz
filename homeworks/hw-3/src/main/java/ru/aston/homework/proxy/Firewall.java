@@ -12,7 +12,7 @@ public class Firewall implements Connection {
     
     @Override
     public String connect(String host) {
-	if (blackList.contains(host) {
+	if (blackList.contains(host)) {
 		return String.format("Firewall: connection blocked to \"%s\"", host);
 	}
 

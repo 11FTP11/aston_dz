@@ -6,7 +6,7 @@ import java.util.List;
 class NumberSearcher {
     private NumberSearchStrategy strategy;
 
-    public setStrategy(NumberSearchStrategy strategy) {
+    public void setStrategy(NumberSearchStrategy strategy) {
 	this.strategy = strategy;
     }
 
