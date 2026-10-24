@@ -9,15 +9,14 @@ public class ProxyDemo {
 	);
 	
 	System.out.println("Firewall initialized");
-	
-        String res1 = firewall.connect("google.com");
+	String target = "badsite.com";
+        String res1 = firewall.connect(target);
         System.out.println("Request 1: " + res1);
 
-        String blockedSite = "badsite.com";
-        firewall.blockHost(blockedSite);
-        System.out.println("blocking host: " + blockedSite);
- 
-        String res2 = firewall.connect(blockedSite);
+        System.out.printf("blocking host \"%s\" ...\n", target);
+        firewall.blockHost(target); 
+	
+        String res2 = firewall.connect(target);
         System.out.println("Request 2: " + res2);
 
         String safeSite = "safe-site.org";
