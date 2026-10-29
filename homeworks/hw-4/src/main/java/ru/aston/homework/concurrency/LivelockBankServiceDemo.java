@@ -14,12 +14,12 @@ class LivelockBankServiceDemo {
             while (true) {
                 fromLock = from.getLock().tryLock();
                 if (fromLock)
-                    System.out.printf("[\"%s\"]: acquired sender account (\"%s\")\n", threadName,  from.getName());
-                
+                    System.out.printf("[\"%s\"]: acquired sender account (\"%s\")\n", threadName, from.getName());
+
                 toLock = to.getLock().tryLock();
                 if (toLock)
-                    System.out.printf("[\"%s\"]: acquired receiver account (\"%s\")\n", threadName,  to.getName());
-                
+                    System.out.printf("[\"%s\"]: acquired receiver account (\"%s\")\n", threadName, to.getName());
+
                 if (fromLock && toLock) {
                     System.out.printf("[\"%s\"]: successful acquired both accounts", threadName);
                     break;
@@ -30,20 +30,26 @@ class LivelockBankServiceDemo {
                     from.getLock().unlock();
                     fromLock = false;
                 }
-                
+
                 if (toLock && !fromLock) {
                     System.out.printf("[\"%s\"]: sender is busy. Unlocking receiver...", threadName);
                     to.getLock().unlock();
                     toLock = false;
                 }
             }
-            
-            from.applyOperation(new Withdraw(amount));                        
-            to.applyOperation(new Deposit(amount));                
-            System.out.printf("[\"%s\"]: succesful ended transfer with receiver (\"%s\") and sender (\"%s\")\n", threadName, from.getName(), to.getName());
+
+            from.applyOperation(new Withdraw(amount));
+            to.applyOperation(new Deposit(amount));
+            System.out.printf(
+                    "[\"%s\"]: succesful ended transfer with receiver (\"%s\") and sender (\"%s\")\n",
+                    threadName, from.getName(), to.getName());
+        } catch (IllegalStateException | IllegalArgumentException | NullPointerException e) {
+            System.out.printf("[\"%s\"]: transfer error -> %s\n", threadName, e.getMessage());
         } finally {
-            if (fromLock) from.getLock().unlock();
-            if (toLock) from.getLock().unlock();
+            if (fromLock)
+                from.getLock().unlock();
+            if (toLock)
+                to.getLock().unlock();
         }
     }
 
@@ -54,7 +60,7 @@ class LivelockBankServiceDemo {
         Thread t1 = new Thread(() -> {
             transfer(acc1, acc2, new BigDecimal("300.00"));
         }, "Thread-1");
-        
+
         Thread t2 = new Thread(() -> {
             transfer(acc2, acc1, new BigDecimal("100.00"));
         }, "Thread-2");

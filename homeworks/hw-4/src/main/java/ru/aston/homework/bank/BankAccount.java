@@ -35,18 +35,3 @@ public class BankAccount implements Account, Lockable {
         this.balance = new BigDecimal(balance);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

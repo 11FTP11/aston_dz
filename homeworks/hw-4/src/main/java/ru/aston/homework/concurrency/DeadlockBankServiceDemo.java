@@ -14,11 +14,14 @@ class DeadlockBankServiceDemo {
             
             System.out.printf("[\"%s\"]: trying to acquire receiver account (\"%s\")...\n", threadName, to.getName());
             synchronized(to) {
-                from.applyOperation(new Withdraw(amount));            
-                to.applyOperation(new Deposit(amount));                
+                try {
+                    from.applyOperation(new Withdraw(amount));            
+                    to.applyOperation(new Deposit(amount));                
+                    System.out.printf("[\"%s\"]: succesful ended transfer with receiver (\"%s\") and sender (\"%s\")\n", threadName, from.getName(), to.getName());
+                } catch (IllegalStateException | IllegalArgumentException | NullPointerException e) {
+                    System.out.printf("[\"%s\"]: transfer error -> %s\n", threadName, e.getMessage());
+                }
             }
-            
-            System.out.printf("[\"%s\"]: succesful ended transfer with receiver (\"%s\") and sender (\"%s\")\n", threadName, from.getName(), to.getName());
         }
     }
 
